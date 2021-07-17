@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.finalproject.hikinginformation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_hiking"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_hiking"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="q">
+        <activity android:name="com.finalproject.hikinginformation.activities.PeralatanActivity"/>
+        <activity android:name="com.finalproject.hikinginformation.activities.DetailTipsActivity"/>
+        <activity android:name="com.finalproject.hikinginformation.activities.DetailPeralatanActivity" />
+        <activity android:name="com.finalproject.hikinginformation.activities.DetailGunungActivity" />
+        <activity android:name="com.finalproject.hikinginformation.activities.ListGunungActivity" />
+        <activity android:name="com.finalproject.hikinginformation.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAS5tjJY2TlMxomPZUJsSowyYQq-QAHhL8" />
+    </application>
+
+</manifest>
